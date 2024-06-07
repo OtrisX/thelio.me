@@ -4,7 +4,7 @@ import Link from "next/link"
 export const Hero = () => {
         return (
                 <section className='px-2 mt-16' id='home'>
-                        <Image src="" alt="Thélio-foto" />
+                        {/* <Image src="" alt="Thélio-foto" /> */}
 
                         <div className="max-w-5xl mx-auto">
                                 <h1 className='text-white font-sans font-extrabold text-3xl text-center lg:text-7xl'>
