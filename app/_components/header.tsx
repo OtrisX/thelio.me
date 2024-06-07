@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { use, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const Nav = ({
@@ -32,7 +32,7 @@ const Nav = ({
                                         </li>
                                 ))}
                         </ul>
-                </nav>
+                </nav >
         );
 };
 
@@ -40,11 +40,12 @@ export const Header = () => {
 
         const [isOpen, setOpen] = useState(false)
 
+
+
         const toggleMenu = () => {
+                if (window.innerWidth > 1024) return
                 setOpen(!isOpen)
         }
-
-
 
         return (
                 <header className=' bg-background '>
