@@ -29,7 +29,7 @@ const ExperienceItem = ({
                 </div>
                 <ul className="mt-2 list-disc list-inside text-sm text-gray-500">
                         {responsibilities.map((responsibility, index) => (
-                                <li key={index}>{responsibility}</li>
+                                <li key={index} className="pt-1">{responsibility}</li>
                         ))}
                 </ul>
         </div>
