@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Thélio - Desenvolvedor FullStack",
     description: "Desenvolvedor FullStack experiente em React, Node.js e tecnologias web modernas. Entrego soluções de qualidade com código limpo e escalável.",
-    url: "https://thelio.com",
+    url: "https://thelio.me",
     images: [
       {
-        url: "https://thelio.com/opengraph-image.png",
+        url: "https://thelio.me/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Thélio - Desenvolvedor FullStack",
