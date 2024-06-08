@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://thelio.com",
     images: [
       {
-        url: "https://thelio.com/og-image.png",
+        url: "https://thelio.com/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Thélio - Desenvolvedor FullStack",
