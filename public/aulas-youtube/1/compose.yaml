@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: senha_postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: flowise
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  flowise:
+    image: flowiseai/flowise:1.8.2
+    environment:
+      FLOWISE_USERNAME: xxx
+      FLOWISE_PASSWORD: xxx
+      DATABASE_TYPE: postgres
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: senha_postgres
+      DATABASE_NAME: flowise
+    depends_on:
+      - postgres
+    ports:
+      - "3000:3000"
+    volumes:
+      - flowise-data:/app/data
+
+volumes:
+  postgres-data:
+  flowise-data:
